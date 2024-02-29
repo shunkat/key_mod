@@ -1,0 +1,67 @@
+{
+  "title": "Language switch with left-control and right-command on TEX shura",
+  "rules": [
+    {
+      "description": "Switch to English input with left-control on TEX shura",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_control",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_control",
+              "lazy": true
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "japanese_eisuu"
+            }
+          ],
+          "to_if_held_down": {
+            "key_code": "left_control"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Switch to Japanese input with right-command",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_command",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_command",
+              "lazy": true
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "japanese_kana"
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "key_code": "right_command"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

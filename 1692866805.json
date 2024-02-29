@@ -1,0 +1,28 @@
+{
+  "title": "shift + backspace to escape",
+  "rules": [
+  {
+    "description": "shift + backspace to escape",
+    "manipulators": [
+      {
+        "type": "basic",
+        "from": {
+          "key_code": "delete_or_backspace",
+          "modifiers": {
+            "mandatory": [
+              "shift"
+            ],
+            "optional": [
+              "any"
+            ]
+          }
+        },
+        "to": [
+          {
+            "key_code": "escape"
+          }
+        ]
+      }
+    ]
+  }]
+}
