@@ -1,8 +1,8 @@
 {
-  "title": "Language switch with left-control and right-command on TEX shura",
+  "title": "Language switch with left-control and right-command",
   "rules": [
     {
-      "description": "Switch to English input with left-control on TEX shura",
+      "description": "Switch to English input with left-control",
       "manipulators": [
         {
           "type": "basic",

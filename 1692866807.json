@@ -1,0 +1,37 @@
+{
+  "title": "Spacebar to Space on tap, to right_option on hold",
+  "rules": [
+    {
+      "description": "Spacebar to Space on tap, to right_option on hold",
+      "manipulators": [
+          {
+              "type": "basic",
+              "from": {
+                  "key_code": "spacebar",
+                  "modifiers": {
+                      "optional": ["any"]
+                  }
+              },
+              "to": [
+                  {
+                      "key_code": "vk_none"
+                  }
+              ],
+              "to_if_alone": [
+                  {
+                      "key_code": "spacebar"
+                  }
+              ],
+              "to_if_held_down": [
+                  {
+                      "key_code": "right_option"
+                  }
+              ],
+              "parameters": {
+                  "basic.to_if_held_down_threshold_milliseconds": 100
+              }
+          }
+      ]
+    }
+  ]
+}
