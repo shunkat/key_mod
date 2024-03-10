@@ -27,6 +27,10 @@
           ],
           "to_if_held_down": {
             "key_code": "left_control"
+          },
+          "parameters": {
+            "basic.to_if_alone_timeout_milliseconds": 300,
+            "basic.to_if_held_down_threshold_milliseconds": 100
           }
         }
       ]
@@ -39,7 +43,7 @@
           "from": {
             "key_code": "right_command",
             "modifiers": {
-              "optional": [
+              "optional": [ 
                 "any"
               ]
             }
