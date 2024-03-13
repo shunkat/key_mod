@@ -14,12 +14,13 @@
               },
               "to": [
                   {
-                      "key_code": "vk_none"
+                      "key_code": "right_option",
+                      "lazy": true
                   }
               ],
               "to_if_alone": [
                   {
-                      "key_code": "spacebar"
+                    "key_code": "spacebar"
                   }
               ],
               "to_if_held_down": [
