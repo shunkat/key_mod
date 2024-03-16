@@ -1,5 +1,5 @@
 {
-  "title": "Language switch with left-control and right-command",
+  "title": "英数切り替え",
   "rules": [
     {
       "description": "Switch to English input with left-control",

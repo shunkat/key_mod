@@ -1,5 +1,5 @@
 {
-  "title": "Spacebar to Space on tap, to right_option on hold",
+  "title": "Assign Layer-key to existing keys",
   "rules": [
     {
       "description": "Spacebar to Space on tap, to right_option on hold",
@@ -31,6 +31,36 @@
               "parameters": {
                   "basic.to_if_held_down_threshold_milliseconds": 100
               }
+          }
+      ]
+    },
+    {
+      "description": "f to f on tap, to keyboard_fn on hold",
+      "manipulators": [
+          {
+              "type": "basic",
+              "from": {
+                  "key_code": "f",
+                  "modifiers": {
+                      "optional": ["any"]
+                  }
+              },
+              "to": [
+                  { 
+                    "apple_vendor_top_case_key_code":"keyboard_fn",
+                    "lazy": true
+                }
+              ],
+              "to_if_alone": [
+                  {
+                    "key_code": "f"
+                  }
+              ],
+              "to_if_held_down": [
+                  {
+                    "apple_vendor_top_case_key_code":"keyboard_fn"
+                  }
+              ]
           }
       ]
     }
