@@ -35,32 +35,33 @@
       ]
     },
     {
-      "description": "f to f on tap, to keyboard_fn on hold",
+      "description": "Enter to Enter on tap, to keyboard_fn on hold",
       "manipulators": [
           {
               "type": "basic",
               "from": {
-                  "key_code": "f",
-                  "modifiers": {
-                      "optional": ["any"]
-                  }
+                  "key_code": "right_control"
               },
               "to": [
-                  { 
+                {
                     "apple_vendor_top_case_key_code":"keyboard_fn",
                     "lazy": true
                 }
               ],
               "to_if_alone": [
                   {
-                    "key_code": "f"
+                    "key_code": "return_or_enter"
                   }
               ],
+              "parameters": {
+                  "basic.to_if_held_down_threshold_milliseconds": 100
+              },
               "to_if_held_down": [
-                  {
+                {
                     "apple_vendor_top_case_key_code":"keyboard_fn"
-                  }
+                }
               ]
+                  
           }
       ]
     }

@@ -10,7 +10,7 @@
             "key_code": "h",
             "modifiers": {
               "mandatory": [
-               "fn"
+                "right_control"
               ],
               "optional": [
                 "any"
@@ -29,7 +29,7 @@
             "key_code": "l",
             "modifiers": {
               "mandatory": [
-               "fn"
+               "right_control"
               ],
               "optional": [
                 "any"
@@ -48,7 +48,7 @@
             "key_code": "k",
             "modifiers": {
               "mandatory": [
-               "fn"
+               "right_control"
               ],
               "optional": [
                 "any"
@@ -67,7 +67,7 @@
             "key_code": "j",
             "modifiers": {
               "mandatory": [
-               "fn"
+               "right_control"
               ],
               "optional": [
                 "any"
@@ -91,7 +91,7 @@
             "key_code": "w",
             "modifiers": {
               "mandatory": [
-                "fn"
+                "right_control"
               ],
               "optional": [
                 "any"
@@ -108,7 +108,7 @@
             "key_code": "e",
             "modifiers": {
               "mandatory": [
-                "fn"
+                "right_control"
               ],
               "optional": [
                 "any"
@@ -125,7 +125,7 @@
             "key_code": "q",
             "modifiers": {
               "mandatory": [
-                "fn"
+                "right_control"
               ],
               "optional": [
                 "any"
@@ -142,7 +142,7 @@
             "key_code": "i",
             "modifiers": {
               "mandatory": [
-                "fn"
+                "right_control"
               ],
               "optional": [
                 "any"
@@ -159,7 +159,7 @@
             "key_code": "u",
             "modifiers": {
               "mandatory": [
-                "fn"
+                "right_control"
               ],
               "optional": [
                 "any"
